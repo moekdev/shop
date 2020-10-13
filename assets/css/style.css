@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -9,12 +9,16 @@ body {
 
 }
 
-h1 {
+span {
     font-size: 3.6em;
 }
 
+h3 {
+    padding: 35px;
+}
+
 h5 {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -62,12 +66,14 @@ a:hover {
     letter-spacing: 3px;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
     color: #000;
     background-color: #b43f5a;
 }
 
-.nav-pills > li > a {
+.nav-pills>li>a {
     color: #000;
     font-weight: 700;
     font-size: 1.4em;
@@ -81,7 +87,7 @@ a:hover {
     text-transform: uppercase;
 }
 
-.nav-pills > li > a:hover {
+.nav-pills>li>a:hover {
     background-color: #b43f5a;
 }
 
@@ -96,7 +102,8 @@ a:hover {
     border-color: #fff;
 }
 
-.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle {
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle {
     background-color: #333;
 }
 
@@ -149,12 +156,6 @@ a:hover {
     margin: 0;
 }
 
-/* Social */
-
-
-/* img  */
-
-
 /* col */
 
 .col-lg-4 {
@@ -203,11 +204,11 @@ a:hover {
     background-color: #f9f9f9;
 }
 
-.panel-info > .panel-heading > .sidebar-header > .panel-body p {
+.panel-info>.panel-heading>.sidebar-header>.panel-body p {
     font-weight: 300;
 }
 
-.panel-info > .panel-heading {
+.panel-info>.panel-heading {
     background-color: #b43f5a;
     color: #fff;
     border-color: transparent;
@@ -235,7 +236,7 @@ a:hover {
     font-size: 28px;
 }
 
-.dream > .maintext {
+.dream>.maintext {
     font-size: 20px;
 }
 
@@ -271,8 +272,16 @@ footer a:hover {
     color: #34C9BC;
 }
 
-@media (max-width: 767px) {
-    .nav-pills > li {
+@media only screen and (max-width: 414px) {
+    .switem {
+        left: 50%;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-pills>li {
         float: none;
     }
 
@@ -288,16 +297,34 @@ footer a:hover {
     .header {
         text-align: center;
     }
+
+    .intro .img-responsive {
+        height: 500px;
+    }
+
+    .switem {
+        left: 55%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .switem {
+        left: 50%;
+    }
+
+    .text-justify {
+        font-size: 20px;
+        text-align: justify;
+        
+    }
+    
+    .img-circle {
+        width: 90%;
+    }
 }
 
 /* Sign Up page */
 
 .subtitle p {
     font-weight: normal;
-}
-
-/* Clothing item page*/
-
-.clothing_item img {
-
 }
